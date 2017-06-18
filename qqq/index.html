@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<title>招财猫</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html">招财猫理财</a>
+			</h1>
+			<div>
+				<a href="yanzheng.html">注册</a> |
+				<a href="yanzheng.html">登录</a>
+			</div>
+		</header>
+		<nav>
+			<a href="index.html" class="cur">首页</a>
+			<a href="detail.html">我要投资</a>
+			<a href="help.html">账户中心</a>
+		</nav>
+		<section class="slider">
+			<div id="slider" class="swipe">
+				<div class="swipe-wrap">
+					<div><img src="img/slider1.jpg" alt="" /></div>
+					<div><img src="img/slider2.jpg" alt="" /></div>
+				</div>			
+			
+				<ul class="indirector">
+					<li class="cur"></li><li></li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="nav">
+			<a href="detail.html"><i class="iconfont icon-suo"></i><span>安全保障</span></a>
+			<a href="introduce.html"><i class="iconfont icon-jiaruwomen"></i><span>关于我们</span></a>
+			<a href="yanzheng.html"><i class="iconfont icon-xinshouzhiyin"></i><span>新手指引</span></a>
+			<a href="help.html"><i class="iconfont icon-wenhao"></i><span>帮助中心</span></a>			
+		</section>
+		
+		<section class="product">
+			<div class="title">
+				<div>
+					<h3><i class="iconfont icon-weibiaoti--"></i>热门产品</h3>
+				</div>
+				<a href="">更多</a>				
+			</div>
+			<ul>
+				<li class="item">
+					<h4><span>赢信计划2467号1期</span><i class="icon-money">返现金</i><i class="iconfont icon-vip"></i></h4>
+					<div class="num">
+						<div class="num1">
+							<em>9.2%</em>+0.5%
+						</div>
+						<div class="num2">
+							<p><em>180</em>天</p>
+							<p>投资期限</p>
+						</div>
+						<div class="num3">
+							<img src="img/62.png" alt="" />
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<h4><span>赢信计划2467号1期</span><i class="icon-money">返现金</i><i class="iconfont icon-vip"></i></h4>
+					<div class="num">
+						<div class="num1">
+							<em>11%</em>+0.5%
+						</div>
+						<div class="num2">
+							<p><em>360</em>天</p>
+							<p>投资期限</p>
+						</div>
+						<div class="num3">
+							<img src="img/62.png" alt="" />
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<h4><span>赢信计划2467号1期</span><i class="icon-money">返现金</i><i class="iconfont icon-vip"></i></h4>
+					<div class="num">
+						<div class="num1">
+							<em>10.5%</em>+0.5%
+						</div>
+						<div class="num2">
+							<p><em>300</em>天</p>
+							<p>投资期限</p>
+						</div>
+						<div class="num3">
+							<img src="img/62.png" alt="" />
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="news">
+			<div class="title">
+				<h3><i class="iconfont icon-artboard13"></i>企业动态</h3>
+			</div>
+			<ul class="newslist">
+				<li>
+					<a href="">
+						<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+						<div>
+							<h4>春日梦想，植树专享</h4>
+							<div class="from">
+								<p>来源：招财猫理财<span>2017-6-15</span></p>
+							</div>
+						</div>
+						
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/news20170309133946_工资日标题.jpg" alt="" />
+						<div>
+							<h4>全民植树，热爱生活</h4>
+							<div class="from">
+								<p>来源：招财猫理财<span>2017-6-15</span></p>
+							</div>
+						</div>
+						
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+						<div>
+							<h4>工资加理财</h4>
+							<div class="from">
+								<p>来源：招财猫理财<span>2017-6-15</span></p>
+							</div>
+						</div>
+						
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<footer>
+			<p>
+				<a href="">触屏版</a> |
+				<a href="">电脑版</a> |
+				<a href="">APP下载</a>
+			</p>
+			<p class="right">
+				&copy;招财猫理财浙ICP10666号
+			</p>
+		</footer>
+		
+		
+		
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		window.mySwipe = Swipe(document.getElementById('slider'),{
+//			auto:2000,
+			continuous :true,
+			callback:function(index,ele){
+				console.info(index,ele);
+				
+				$(".indirector li").removeClass("cur").eq(index%2).addClass("cur");
+			}
+		});
+	</script>
+	</body>
+</html>

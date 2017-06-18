@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>详情页</title>
+		<link rel="stylesheet" href="css/detail.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<!--<header>
+			<span class="iconfont icon-fanhui"></span>
+			<h2>赢信计划2671号1期</h2>
+			<span class="iconfont icon-caidan" id="btn_menu"></span>
+		</header>-->
+		<header>
+			<a href="index.html"><i class="iconfont icon-fanhui"></i></a>
+			<span>赢信计划2671号1期</span>
+			<i class="iconfont icon-caidan" id="btn_menu"></i>			
+		</header>
+		<section class="data">
+			<h3>9.2%+0.5%</h3>
+			<p>9.7(9.2%活动加息0.5%)</p>			
+		</section>
+		<ul class="day">
+			<li>1000起投</li>
+			<li>|</li>
+			<li>期限180天</li>
+		</ul>
+		<section class="support">
+			<div>
+				<span><i class="iconfont icon-dianhua"></i>省级律所法律支持</span>
+				<span><i class="iconfont icon-touzi"></i>浙大有创支持入股</span>
+				<span><i class="iconfont icon-huiyuan"></i>招财猫易贷严风控</span>
+				<span><i class="iconfont icon-chongzhi"></i>千万级风险保障金</span>
+			</div>
+		</section>
+		
+		<section class="pro">
+			<div class="bg" id="bg">
+				<div class="front" id="front"></div>
+				<div class="indirector" id="indirector">
+					37%
+				</div>
+			</div>
+				<p>
+					<span>投资<em id="number">37</em>人</span>
+					<span class="fr">剩余可投<em>62300</em>元</span>
+				</p>				
+		</section>
+			
+		
+		<section class="footer">
+			<a href="">估算收益</a>
+			<input type="button"  value="立即投资"/>
+		</section>
+		
+		<div class="mask" id="mask">
+			<div class="links">
+				<a href="index.html"><i class="iconfont icon-wenhao"></i><span>主页</span></a>
+				<a href="introduce.html"><i class="iconfont icon-suo"></i><span>安全保障</span></a>
+				<a href="help.html"><i class="iconfont icon-jiaruwomen"></i><span>关于我们</span></a>
+				<a href="detail.html"><i class="iconfont icon-xinshouzhiyin"></i><span>我要投资</span></a>
+			</div>
+		</div>
+		
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/fx.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){
+				var currentValue = 90;
+				$("#number").html(currentValue);
+				$("#indirector").html(currentValue+"%");
+				var bgWidth =$("#bg").width();
+				console.log(bgWidth);
+				var newWidth = bgWidth*currentValue/100  //前景的宽度
+				var newLeft = newWidth-$('#indirector').width()/2  //指示条的宽度
+				$("#front").animate({width:newWidth},500);
+				
+				$("#indirector").animate({left:newLeft},500);
+				
+			//这里的tap可能会被触发两次，需要去改touch.js的源码
+			$('#btn_menu').on("tap",function(){
+				// 在隐藏和显示两种情况下切换
+			console.log("aaaa");
+				
+				$("#mask").toggle();
+			})
+
+			})
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,78 @@
+.flex_a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+}
+@media screen and (width: 320px) {
+  html {
+    font-size: 42.66666666666667px;
+    /*320/750*100*/
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 50px;
+    /*375/750*100*/
+  }
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+.c3 {
+  color: #ccc;
+}
+footer {
+  background-color: #fff;
+  height: 1.65rem;
+  border-top: 1px solid #ccc;
+  margin-top: 0.23rem;
+  font-size: 0.28rem;
+  padding-top: 0.45rem;
+}
+footer p {
+  text-align: center;
+  color: #494848;
+}
+footer .copyright {
+  margin-top: 0.2rem;
+  color: #9a9b9c;
+  font-size: 0.26rem;
+}
+.mask {
+  display: none;
+  position: absolute;
+  top: 0.92rem;
+  bottom: 1.05rem;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mask .links {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1.1rem;
+}
+.mask .links a {
+  flex: 1 1 auto;
+  text-align: center;
+  color: red;
+  font-size: 0.2rem;
+  border-right: 1px solid red;
+}
+.mask .links a:last-child {
+  border-right: none;
+}
+.mask .links .iconfont {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-size: 0.4rem;
+}

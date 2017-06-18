@@ -1,0 +1,59 @@
+@import "z.less";
+
+body{
+    font-family: "Microsoft Yahei","微软雅黑";
+    background-color: #f9f9f9;
+}
+.c3{
+    color: #ccc;
+}
+footer{
+    background-color: #fff;
+   .h(165);
+    border-top:1px solid #ccc;
+    .mt(23);
+    .fs(28);
+    .pt(45);
+    p{
+        text-align: center;
+        color:#494848;
+    }
+    .copyright{
+        .mt(20);
+        color:#9a9b9c;
+        .fs(26);
+    }
+}
+
+
+.mask{
+    display:none;
+    position:absolute;
+    .t(92);
+    .b(105);
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,.5);
+    .links{
+        a{
+            flex:1 1 auto;
+            .tc();
+            color:red;
+            .fs(20);
+            border-right:1px solid red;
+            
+        }
+    
+        a:last-child{
+            border-right:none;
+        }
+        background-color: #fff;
+        .flex_a();
+        .h(110);
+        .iconfont{
+            display:block;
+            .mb(10);
+            .fs(40);
+        }    
+    }   
+}

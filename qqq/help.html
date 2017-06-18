@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<title>招财猫</title>
+		<link rel="stylesheet" type="text/css" href="css/help.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><i class="iconfont icon-fanhui"></i></a>
+			<span>帮助中心</span>
+			<i class="iconfont icon-caidan" id="btn_menu"></i>
+		</header>
+		<section class="list">
+			<ul>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-icon4"></i>了解招财猫</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-wode"></i>注册/登陆</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-renzheng"></i>认证</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-touzi"></i>投资</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-chongzhi"></i>充值，提现</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-xiaoxi"></i>名词解释</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-wenhao"></i>意见反馈</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span><i class="iconfont icon-iconziti10"></i>客户端下载</span>
+						<i class="iconfont icon-start"></i>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="server">
+			<i class="iconfont icon-dianhua"></i>
+			<div>
+				<p>拨打客服热线：<em>400-991-7005</em></p>
+				<p class="hui">周一至周五：8：00--8：00；周六至周日：8：00--5：00</p>
+			</div>
+		</section>
+		
+		<footer>
+			<p>
+				<a href="">触屏版</a> |
+				<a href="">电脑版</a> |
+				<a href="">APP下载</a>
+			</p>
+			<p class="right">
+				&copy;招财猫理财浙ICP10666号
+			</p>
+		</footer>
+		
+		<div class="mask" id="mask">
+			<div class="links">
+				<a href="index.html"><i class="iconfont icon-wenhao"></i><span>主页</span></a>
+				<a href="introduce.html"><i class="iconfont icon-suo"></i><span>安全保障</span></a>
+				<a href="help.html"><i class="iconfont icon-jiaruwomen"></i><span>关于我们</span></a>
+				<a href="detail.html"><i class="iconfont icon-xinshouzhiyin"></i><span>我要投资</span></a>
+			</div>
+		</div>
+		
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/fx.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		//这里的tap可能会被触发两次，需要去改touch.js的源码
+			$('#btn_menu').on("tap",function(){
+				// 在隐藏和显示两种情况下切换
+			console.log("aaaa");
+				
+				$("#mask").toggle();
+			})
+
+			
+		</script>
+	</body>
+</html>

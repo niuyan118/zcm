@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<title></title>
+		<link rel="stylesheet" href="css/introduce.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><i class="iconfont icon-fanhui"></i></a>
+			<span>了解招财猫</span>
+			<i class="iconfont icon-caidan" id="btn_menu"></i>			
+		</header>
+		
+		<section class="introduce">
+			<p class="first">1.招财猫理财收费么？</p>
+			<p>针对招财猫理财的 投资者，招财猫理财不收取任何投资购买，还款体现，资金保管等手续费。全部手续费由招财猫理财承担。</p>
+			
+			<p class="first">2.招财猫理财安全么？</p>
+			<p>国内权威的融资性担保公司和第三方机构提供本息保障，合作伙伴均为严格多重甄选的业内最优质企业及机构，降低投资风险。<br />
+				资金安全保障：所有出入自己搞在银行开设监管账户，由银行专门监管，专款专用。<br />
+				信息安全保障：顶级i洗脑洗安全技术SSL加密传输方式，保障用户信息和交易数据真实，安全，私密。
+			</p>
+			
+			<p class="first">3.电子合同是否具有法律效力？</p>
+			<p>《合同法》第十条：当事人订立合同，有书面形式，口头形式和其他形式。第十一条：书面形式是指合同书、信件、和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）
+			等可以有行的表现所载内容的形式。依据上述法律规定可见，电子合同是我国法律明确认可的的一种合同形式，所以效力可以等同于传统得到纸质合同。
+			</p>
+		</section>
+		
+		<footer>
+			<p>
+				<a href="">触屏版</a> |
+				<a href="">电脑版</a> |
+				<a href="">APP下载</a>
+			</p>
+			<p class="right">
+				&copy;招财猫理财浙ICP10666号
+			</p>
+		</footer>
+		
+		<div class="mask" id="mask">
+			<div class="links">
+				<a href="index.html"><i class="iconfont icon-wenhao"></i><span>主页</span></a>
+				<a href="introduce.html"><i class="iconfont icon-suo"></i><span>安全保障</span></a>
+				<a href="help.html"><i class="iconfont icon-jiaruwomen"></i><span>关于我们</span></a>
+				<a href="detail.html"><i class="iconfont icon-xinshouzhiyin"></i><span>我要投资</span></a>
+			</div>
+		</div>
+		
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/fx.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+		//这里的tap可能会被触发两次，需要去改touch.js的源码
+			$('#btn_menu').on("tap",function(){
+				// 在隐藏和显示两种情况下切换
+		
+				
+				$("#mask").toggle();
+			})			
+		</script>
+	</body>
+</html>
+
