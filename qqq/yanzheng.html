@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<link rel="stylesheet" href="css/yanzheng.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><i class="iconfont icon-fanhui"></i></a>
+			<span>验证手机号</span>
+			<i class="iconfont icon-caidan" id="btn_menu"></i>			
+		</header>
+		
+		<section class="pic">
+			<img src="./img/login_img.png" alt="" />
+		</section>
+		
+		
+		<section class="txt">
+			<p>请输入手机号码</p>
+			<input type="text" name="" id="" value="" placeholder="请输入手机号码"/>
+		</section>
+		
+		<section class="next">
+			<input type="button"  value="下一步"/>			
+		</section>
+		
+		<p>阅读并同意《招财猫理财用户使用及隐私协议》</p>
+		
+		<footer>
+			<p>
+				<a href="">触屏版</a> |
+				<a href="">电脑版</a> |
+				<a href="">APP下载</a>
+			</p>
+			<p class="right">
+				&copy;招财猫理财浙ICP10666号
+			</p>
+		</footer>
+		
+		<div class="mask" id="mask">
+			<div class="links">
+				<a href="index.html"><i class="iconfont icon-wenhao"></i><span>主页</span></a>
+				<a href="introduce.html"><i class="iconfont icon-suo"></i><span>安全保障</span></a>
+				<a href="help.html"><i class="iconfont icon-jiaruwomen"></i><span>关于我们</span></a>
+				<a href="detail.html"><i class="iconfont icon-xinshouzhiyin"></i><span>我要投资</span></a>
+			</div>
+		</div>
+		
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/fx.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		//这里的tap可能会被触发两次，需要去改touch.js的源码
+			$('#btn_menu').on("tap",function(){
+				// 在隐藏和显示两种情况下切换
+			console.log("aaaa");
+				
+				$("#mask").toggle();
+			})
+
+			
+		</script>
+	</body>
+</html>
